@@ -1,16 +1,16 @@
-import  Express, { response }  from "express";
+import  express, { response }  from "express";
 import { mongoDBURL,port } from "./config.js";
 import mongoose from "mongoose";
 import { Book } from "./models/bookModel.js";
+ 
 
+const app= express();
 
-const app= Express();
-
-app.use(Express.json())
+app.use(express.json())
 
 app.get("/",(req,res)=>{
     console.log(req);
-    return res.status(200).send(`welcome`)});
+    return res.status(200).send(`welcome`);
 });
 
 app.post("/books",async (request,response)=>{

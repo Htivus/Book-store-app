@@ -1,16 +1,16 @@
 import mongoose from "mongoose";
 
-const bookSchema=mongoose.Schema(
+const bookSchemas=mongoose.Schema(
     {
-        title:{
+        "title":{
             type:String,
             required:true
         },
-        author:{
+        "author":{
             type:String,
             required:true
         },
-        publishyear:{
+        "publishyear":{
             type:Number,
             required:true
         }
@@ -20,5 +20,5 @@ const bookSchema=mongoose.Schema(
     }
 );
 
-export const Book=mongoose.model('bookSchema',{name:String});
+export const Book=mongoose.model('bookSchemas',{name:String});
 
