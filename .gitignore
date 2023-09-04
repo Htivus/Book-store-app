@@ -1,4 +1,4 @@
 backend/node_modules
 
 # Ignore config.js file
-config.js
+backend/config.js
