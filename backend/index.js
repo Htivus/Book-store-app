@@ -1,5 +1,5 @@
 import  express, { response }  from "express";
-import { mongoDBURL,port } from "./config.js";
+import { mongoDBURL,port } from "./configg.js";
 import mongoose from "mongoose";
 import { Book } from "./models/bookModel.js";
  
